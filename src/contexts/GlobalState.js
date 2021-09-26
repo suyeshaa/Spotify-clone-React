@@ -37,6 +37,27 @@ const reducer = (state, action) => {
       };
     }
 
+    // case "SET_PLAYING": {
+    //   return {
+    //     ...state,
+    //     playling: action.playing,
+    //   };
+    // }
+
+    // case "SET_ITEM": {
+    //   return {
+    //     ...state,
+    //     item: action.item,
+    //   };
+    // }
+
+    // case "SET_SPOTIFY": {
+    //   return {
+    //     ...state,
+    //     spotify: action.spotify,
+    //   };
+    // }
+
     case "SET_DISCOVER_WEEKLY": {
       return {
         ...state,

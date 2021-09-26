@@ -7,7 +7,45 @@ import Header from "./Header";
 import SongRow from "./SongRow";
 
 const Body = ({ spotify }) => {
-  const { state } = useGlobal();
+  const { state, dispatch } = useGlobal();
+
+  // const playPlaylist = (id) => {
+  //   spotify
+  //     .play({
+  //       context_uri: `spotify:playlist:37i9dQZEVXcJZyENOWUFo7`,
+  //     })
+  //     .then((res) => {
+  //       spotify.getMyCurrentPlayingTrack().then((r) => {
+  //         dispatch({
+  //           type: "SET_ITEM",
+  //           item: r.item,
+  //         });
+  //         dispatch({
+  //           type: "SET_PLAYING",
+  //           playing: true,
+  //         });
+  //       });
+  //     });
+  // };
+
+  // const playSong = (id) => {
+  //   spotify
+  //     .play({
+  //       uris: [`spotify:track:${id}`],
+  //     })
+  //     .then((res) => {
+  //       spotify.getMyCurrentPlayingTrack().then((r) => {
+  //         dispatch({
+  //           type: "SET_ITEM",
+  //           item: r.item,
+  //         });
+  //         dispatch({
+  //           type: "SET_PLAYING",
+  //           playing: true,
+  //         });
+  //       });
+  //     });
+  // };
 
   return (
     <div className="body">

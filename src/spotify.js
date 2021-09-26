@@ -1,7 +1,7 @@
 // what is happening is we are not tackling the authorization ourselves , spotify does it and when we click on login button it gets redirected to spotify authorization server and once spotify authorizes it , it gets redirected back to localhost:3000
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectURL = "http://localhost:3000/";
+const redirectURL = "https://spotiifyy.netlify.app";
 
 const clientId = "1763b24808034567b8b6a6ac6235bdfd";
 
